@@ -9,7 +9,7 @@ export default function Form({userinfo}) {
 
       if(!details) return;
 
-      let newItem = {details, quantity, packed: 'false', id: Date.now()};
+      let newItem = {details, quantity, packed: false, id: Date.now()};
       userinfo(newItem);
   }
 
